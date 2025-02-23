@@ -1,1 +1,7 @@
-<h1> HI </h1>
+<div class="row">
+  <% for place in @places %>
+    <div class="col-3">
+      <h4><%= place["name"] %></h4>
+    </div>
+  <% end %>
+</div>
