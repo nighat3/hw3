@@ -1,10 +1,5 @@
 class EntriesController < ApplicationController
 
-  def index
-    @entries = Entry.all
-   # @entries = Entry.find_by({ "place_id" => params["place_id"] })
-    
-  end
 
   def new
 
