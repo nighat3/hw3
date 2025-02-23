@@ -1,17 +1,18 @@
 <h1>New Entry</h1>
 
-<form action="/entries" method="post">
+<form action="/entries/" method="post">
   <p>
-    <label for="name">Entry Name</label>
-    <input type="text" name="name" id="name">
+    <label for="title">Entry Name</label>
+    <input type="text" name="title" id="title">
+  </p>
+   <p>
+    <label for="description">Description</label>
+    <input type="text" name="description" id="description">
   </p>
   <p>
-    <label for="date">Date</label>
-    <input type="date" name="date" id="date">
+    <label for="occurred_on">Date</label>
+    <input type="date" name="occurred_on" id="occurred_on">
   </p>
-  <p>
-    <label for="notes">Notes</label>
-    <input type="text" name="notes" id="notes">
-    </p>
-    <button>Submit</button>
+ 
+    <button>Save</button>
 </form>

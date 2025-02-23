@@ -1,0 +1,18 @@
+<h1> My Entries </h1>
+
+<ul>
+  <% for entry in @entries%>
+  <li>
+  <%= entry["title"] %>
+  </li> 
+  <li>
+  <%= entry["description"] %>
+  </li> 
+  <li>
+  <%= entry["date"] %>
+  </li>    
+  
+  <% end %>
+</ul>
+
+<p><a href="/entries/new">Add a new Entry</a></p>
