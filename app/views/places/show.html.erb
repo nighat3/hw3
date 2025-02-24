@@ -4,17 +4,36 @@
 <ul>
  <% for entry in @entries %>
     <li>
-    <p>
+    <p> <strong> Title: </strong>
       <%= entry["title"] %>
-      </p>
-      <p>
+    </p>
+    
+    <p> <strong> Date: </strong>
       <%= entry["occurred_on"] %>
-      </p>
-      <p>
+    </p>
+    
+    <p> <strong> Description: </strong>
       <%= entry["description"] %>
-      </p>
+    </p>
     </li>
-</ul>
-<%end%>
 
-<p><a href="/entries/new?place_id=<%=params["id"]%>">Add a new Entry</a></p>
+<%end%>
+</ul>
+
+<p>
+  <a href="/entries/new?place_id=<%=params["id"]%>">
+    <button> 
+      Add a new Entry
+    </button>
+  </a>
+
+</p>
+
+
+<p>
+  <a href="/places/">
+    <button>
+      Back to Places
+    </button>
+  </a>
+</p>

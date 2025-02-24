@@ -7,8 +7,7 @@ class PlacesController < ApplicationController
 
 
   def show
-    #Entry.destoy_all
-    #Place.destroy_all
+   
     @place = Place.find_by("id" => params["id"])
     @entries = Entry.where("place_id" => params["id"])
 
