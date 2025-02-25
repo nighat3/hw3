@@ -15,7 +15,8 @@ class PlacesController < ApplicationController
 
 
   def new
-    @place = Place.new 
+    #@place = Place.new 
+    
     
   end
 
@@ -23,10 +24,9 @@ class PlacesController < ApplicationController
   def create
     @place = Place.new
 
-    # assign user-entered form data to Post's columns
     @place["name"] = params["name"]
 
-    # save Post row
+    # save row
     @place.save
 
     # redirect user
